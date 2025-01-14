@@ -1,0 +1,42 @@
+body {
+  background-color: #dcd6c4;
+}
+hr {
+  border: none;
+  border-top: 3px double #333;
+  color: #333;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+h1 {
+  font-family: "Arsenal SC", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #754041;
+}
+
+.section_li3 {
+  font-family: "Arsenal SC", sans-serif;
+  line-height: 1.6em;
+  font-size: 18px;
+  margin-bottom: 1.5em;
+  text-align: justify;
+}
+.long_text {
+  column-count: 2;
+  column-gap: 40px;
+  padding: 10px;
+}
+
+.footer_li3 {
+  color: #dcd6c4;
+  background-color: #333;
+  height: 90px;
+}
+
+.footer_li3 p {
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 20px;
+}
