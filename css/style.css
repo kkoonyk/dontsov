@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+h1 {
+  font-family: "Arsenal SC", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #7e4d4e;
+}
+body {
+  background: url(/images/dontsov_.jpg) no-repeat center center / contain;
+  background-color: #ffffff;
+  font-family: Arsenal, sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -220px;
+  width: 220px;
+  height: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  transition: left 3s ease;
+}
+
+.sidebar.show {
+  left: 0; /* Переміщення панелі в область видимості */
+}
+.sidebar ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.sidebar ul li {
+  width: 100%;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 19px;
+  padding: 40px 10px;
+  display: block;
+  font-family: "Arsenal SC", sans-serif;
+  font-weight: 600;
+}
+
+.sidebar ul li a:hover {
+  background-color: #555;
+  transition: background-color 0.5s;
+}
+
+.language-switcher {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 10px 10px 0 0;
+  font-family: "FixelDisplay", "Roboto", sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+
+.language-switcher li {
+  margin: 0 2px;
+}
+
+.language-link {
+  text-decoration: none;
+  margin: 0 2px;
+  width: 18.3px;
+  height: 15px;
+  color: #000000;
+}
+
+.language-link.active {
+  color: #000000; /* Чорний колір для активної мови */
+  font-weight: bold;
+}
+
+.language-link.inactive {
+  color: rgba(0, 0, 0, 0.5); /* Сірий колір для неактивної мови */
+}
+
+.language-link.inactive:hover {
+  color: #000000; /* При наведенні змінюється на чорний */
+  font-weight: bold;
+}
+li::after {
+  margin: 0 7px;
+}
+
+colors {
+  color: #c69e7b;
+
+  color: #edd8ba;
+
+  color: #7e4d4e;
+
+  color: #754041;
+
+  color: #687a82;
+
+  color: #333333;
+
+  color: #2d1016;
+}

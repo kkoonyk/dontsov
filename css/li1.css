@@ -1,0 +1,161 @@
+body {
+  background-color: #dcd6c4;
+  font-family: "Arsenal SC", sans-serif;
+}
+
+hr {
+  border: none;
+  border-top: 3px double #333;
+  color: #333;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
+p {
+  font-family: "Arsenal SC", sans-serif;
+  font-weight: 400;
+  /* line-height: 1.6em; */
+  font-size: 18px;
+  margin-bottom: 1.5em;
+  text-align: justify;
+}
+h1 {
+  font-family: "Arsenal SC", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #754041;
+}
+
+.quote {
+  position: relative;
+  top: -16px;
+
+  bottom: 20px;
+  width: 70%; /* Встановлює ширину цитати */
+  margin-bottom: 15px; /* Відступ знизу для відокремлення від основного тексту */
+}
+.long_text {
+  column-count: 2;
+  column-gap: 40px;
+  padding: 10px;
+}
+
+.li1 footer {
+  color: #dcd6c4;
+  background-color: #333;
+  height: 80px;
+}
+
+.li1 footer p {
+  color: #dcd6c4;
+  background-color: #333;
+  height: 80px;
+  margin: 0 auto;
+  width: 50%;
+  /* padding-top: 30px; */
+}
+
+/*до файлу енгельца навігація внизу*/
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-item a {
+  display: block;
+  padding: 10px 15px;
+  background-color: #ddd7c5;
+  border: 1px solid #ddd7c5;
+  border-radius: 3%;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+.page-item a:hover {
+  background-color: #b6b2a2;
+  border-color: #333;
+}
+
+.page-item.disabled a {
+  color: rgba(51, 51, 51, 0.6);
+  pointer-events: none;
+  background-color: #dcd6c4;
+}
+
+.page-item.active a {
+  /* background-color: #a6a7a9; */
+  color: #333;
+  border-color: #333;
+}
+.page-item.active a {
+  /* background-color: #b6b2a2; */
+  color: #333;
+  border-color: #444;
+  font-weight: bold;
+  text-decoration: underline 2px;
+}
+/*кінець стилів навігації*/
+.li5 .list_content {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between; /* Розподілити списки рівномірно */
+  gap: 20px; /* Додати простір між двома списками */
+  padding: 0 20px; /* Відступи з боків (зліва та справа) */
+}
+
+.li5 ul {
+  display: inline-block;
+  padding-inline-start: 0;
+  width: 45%; /* Кожен список займатиме 45% ширини екрану */
+  list-style: none;
+}
+.li5 ul li {
+  padding: 0;
+  margin: 1px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  border: 1px solid #333;
+}
+
+.li5 a {
+  font-family: "Arsenal SC", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+.li5 a {
+  font-family: "Arsenal SC", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.li5 a:hover {
+  text-decoration: underline;
+  /* background-color: #ffffff; */
+}
+
+.li5 li a {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.li5 li a:hover {
+  /* background-color: #333;  Ефект при наведенні миші */
+  color: #333;
+}

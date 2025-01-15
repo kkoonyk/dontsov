@@ -1,0 +1,35 @@
+# Ignore the pdf folder
+
+pdf/
+
+# Ignore temporary files
+
+_.tmp
+_.log
+
+# Ignore OS-specific files
+
+.DS_Store
+Thumbs.db
+
+# Ignore IDE or editor settings
+
+.idea/
+.vscode/
+\*.iml
+
+# Ignore compiled files
+
+_.class
+_.pyc
+_.o
+_.obj
+
+# Ignore node modules (if applicable)
+
+node_modules/
+
+# Ignore dist or build folders
+
+dist/
+build/

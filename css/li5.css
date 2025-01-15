@@ -1,0 +1,77 @@
+body {
+  text-decoration: none;
+  /* background-color: #dcd6c4; */
+}
+h1 {
+  font-family: "Arsenal SC", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #7e4d4e;
+}
+.li5 container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+}
+
+ul {
+  display: inline-block;
+  padding-inline-start: 0;
+}
+
+ul li {
+  padding: 0;
+  margin: 1px;
+  /* margin-bottom: 10px;  Відстань між елементами списку */
+  text-decoration: none;
+  list-style: none;
+  border: 1px solid #333;
+}
+.first-part {
+  width: 50%;
+}
+.second-part {
+  width: 50%;
+}
+a {
+  font-family: "Arsenal SC", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  /* background-color: #dcd6c4; */
+}
+
+a:hover {
+  text-decoration: underline;
+  /* background-color: #ffffff; */
+}
+
+li a {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+li a:hover {
+  /* background-color: #333;  Ефект при наведенні миші */
+  color: #333;
+}
+
+p {
+  font-family: "Arsenal", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer_li5 {
+  /* text-align: center; */
+  /* padding: 10px; */
+  color: #dcd6c4;
+  background-color: #333;
+  height: 80px;
+}
