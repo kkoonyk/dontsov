@@ -11,21 +11,9 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arsenal, sans-serif;
   text-decoration: none;
   background-color: #272626;
-  font-family: Arsenal, sans-serif;
-}
-
-ul {
-  list-style-type: none; /* Видаляє маркери списку */
-  padding-left: 0; /* Видаляє відступи зліва (за необхідності) */
-  margin: 0; /* Видаляє зовнішні відступи (за необхідності) */
-}
-
-li {
-  margin: 0; /* Прибирає додаткові відступи (за необхідності) */
-  padding: 0; /* Прибирає додаткові внутрішні відступи (за необхідності) */
 }
 
 .sidebar.show {

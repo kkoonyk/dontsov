@@ -1,35 +1,41 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --basic-black: #000;
+  --main-bg-color: #fff;
+  --list-color: #333;
+  --list-hover-color: #555;
+  --outline-color: #88474b;
 }
 
 body,
-html {
+html,
+main {
   height: 100%;
   width: 100%;
 }
-h1 {
-  font-family: "Arsenal SC", sans-serif;
+/* h1 {
   font-size: 26px;
   font-weight: 600;
   color: #7e4d4e;
-}
+} */
 body {
   background: url(/images/dontsov_.jpg) no-repeat center center / contain;
-  background-color: #ffffff;
+  background-color: var(--main-bg-color);
   font-family: Arsenal, sans-serif;
+}
+main {
+  position: relative;
 }
 
 .sidebar {
   position: fixed;
   top: 0;
   left: -220px;
-  width: 220px;
+  max-width: 220px;
   height: 100%;
-  background-color: #333;
+  background-color: var(--list-color);
   display: flex;
   justify-content: center;
+  text-align: center;
   transition: left 3s ease;
 }
 
@@ -37,57 +43,49 @@ body {
   left: 0; /* Переміщення панелі в область видимості */
 }
 .sidebar ul {
-  list-style: none;
-  width: 100%;
+  width: 220px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 100%;
-}
-
-.sidebar ul li {
-  width: 100%;
-  text-align: center;
+  background-color: var(--list-color);
 }
 
 .sidebar ul li a {
-  color: #fff;
-  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 120px;
+
   font-size: 19px;
-  padding: 40px 10px;
-  display: block;
-  font-family: "Arsenal SC", sans-serif;
+  /* padding-block: 50px;
+  padding-inline: 10px; */
   font-weight: 600;
 }
 
 .sidebar ul li a:hover {
-  background-color: #555;
+  background-color: var(--list-hover-color);
   transition: background-color 0.5s;
 }
 
 .language-switcher {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 0;
-  margin: 10px 10px 0 0;
-  font-family: "FixelDisplay", "Roboto", sans-serif;
-  font-size: 14px;
-  color: #000000;
-}
+  position: absolute;
+  right: 0;
+  top: 0;
 
-.language-switcher li {
-  margin: 0 2px;
+  margin-block-start: 10px;
+  margin-inline-end: 10px;
+
+  font-family: "FixelDisplay", "Roboto", sans-serif;
+  font-size: 16px;
+  color: #000000;
 }
 
 .language-link {
-  text-decoration: none;
-  margin: 0 2px;
   width: 18.3px;
   height: 15px;
-  color: #000000;
+  color: #000;
 }
 
 .language-link.active {
@@ -102,9 +100,6 @@ body {
 .language-link.inactive:hover {
   color: #000000; /* При наведенні змінюється на чорний */
   font-weight: bold;
-}
-li::after {
-  margin: 0 7px;
 }
 
 colors {
